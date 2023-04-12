@@ -1,4 +1,4 @@
-require './lib/reminder.rb'
+require "./lib/reminder.rb"
 
 RSpec.describe Reminder do
   context "when no task is set" do
@@ -6,5 +6,5 @@ RSpec.describe Reminder do
       reminder = Reminder.new("Kay")
       expect { reminder.remind() }.to raise_error "No reminder set!"
     end
-  end 
+  end
 end
